@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>REAL IP DETECTOR</h1>
+  <h2>With Geolocation</h2>
+  <p>By Rajak Manish Singh</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="aboutus.html" align=right target="_self">About</a>
+
+</div>
+
+<div class="content"><center>
+  <h1 align="center">Enter the ip address  : </h1>
+  <form action="home.php" method="get">
+      <input type="text" name="ip"><br><br>
+      <input type="submit" name="submit">
+  </form>
+</div></center>
+<div class="result">
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {6
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
